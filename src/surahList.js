@@ -8,7 +8,7 @@ import salam from "./salam.png"; // Assuming the image is in the same folder
 const SurahList = () => {
   const audio = {
     
-    "Surah-1": "https://www.dropbox.com/scl/fi/yd5qrlw0qggtbwffz9ye8/001-Sourate-Al-Fatiha.mp3?rlkey=yikjt7118i562ki84g02uvck0&dl=1",
+    "Surah-1": "https://www.dropbox.com/scl/fi/yd5qrlw0qggtbwffz9ye8/001-Sourate-Al-Fatiha.mp3?rlkey=yikjt7118i562ki84g02uvck0&st=gtegmyga&dl=1",
     "Surah-2": "https://www.dropbox.com/scl/fi/hy9yuvuarjh9n2wj5o4jl/002-Sourate-Al-Bakara.mp3?rlkey=7tr0dgt9yrfjzor08rptbetsx&st=lx295je2&dl=1",
     "Surah-3": "https://www.dropbox.com/scl/fi/8r5jlbjrer6kc6ho1u68o/003.mp3?rlkey=zw23a84ecn95ze96r9te8hxx3&st=sx6nrbg4&dl=1", // Link for Surah 3
     "Surah-4": "https://www.dropbox.com/scl/fi/pyz7o1t006jc5z6ao4cfd/004.mp3?rlkey=aqxqtoyka1ruv3yt04ujku4y2&st=k2wyd394&dl=1", // Link for Surah 4
