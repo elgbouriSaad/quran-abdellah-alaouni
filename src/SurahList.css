@@ -1,0 +1,245 @@
+/* Modal Overlay with Fade-in Animation */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes scaleUp {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .scale-up {
+    animation: scaleUp 0.5s ease-out;
+  }
+  
+  /* Modal Overlay Styling */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+  }
+  
+  /* Modal Dialog Styling */
+  .modal-dialog {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 90%; /* Responsive width */
+  }
+  
+  /* Modal Header Styling */
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.2s;
+    margin-left: 30px;
+  }
+  
+  .close-button:hover {
+    color: #dc3545; /* Red on hover */
+    background: none;
+  }
+  
+  /* Modal Content Padding */
+  .modal-content {
+    padding: 20px;
+  }
+  
+  /* Separators between sections */
+  hr {
+    margin: 10px 0;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Iframe Styling */
+  .audio-player {
+    border: none;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #f8f9fa;
+  }
+  
+  /* Table Styling */
+  .table {
+    border-radius: 10px;
+    overflow: hidden;
+    /* padding: 10px; */
+    /* margin: 100px; */
+  }
+  .aze{
+    /* padding: 10px 10px 10px 10px;  */
+    margin: 0px auto 20px auto;
+  }
+  
+  .table thead th {
+    background-color: #343a40;
+    color: #fff;
+  }
+  
+  .table tbody tr {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #f8f9fa;
+    transform: scale(1.02);
+  }
+  
+  /* Hover Zoom Effect */
+  .hover-zoom:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Keyframes for Fade-in and Fade-out animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Apply animations conditionally */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.fade-out {
+  animation: fadeOut 0.5s ease-in-out;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Darker overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+}
+
+/* Modal Dialog Styling */
+.modal-dialog {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  width: 90%; /* Responsive width */
+}
+
+/* Modal Header */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 10px 0; */
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.close-button:hover {
+  color: #dc3545; /* Red on hover */
+}
+
+/* Iframe Styling */
+.audio-player {
+  border: none;
+  width: 100%;
+  height: 70px;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+.table {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table tbody tr:hover {
+  background-color: #f8f9fa;
+  transform: scale(1.02);
+  transition: transform 0.2s;
+}
+/* Custom styling for the first header cell */
+.th-custom {
+  position: relative;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: flex-start; /* Align items to the left */
+  height: 100%; /* Ensure it takes full height */
+  padding-left: 15px; /* Add space from the table edge */
+}
+
+/* Image stays pinned to the left */
+.img-left {
+  margin-right: 10px; /* Space between the image and the text */
+  flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+/* Ensure the text is centered horizontally and vertically */
+span {
+  text-align: center;
+  flex-grow: 1; /* Make the span take up the remaining space */
+}
