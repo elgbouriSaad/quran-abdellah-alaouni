@@ -1,0 +1,120 @@
+.App {
+  text-align: center;
+  background-color: #fffaee;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.card {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-weight: bold;
+  color: #343a40;
+}
+
+.text-muted {
+  font-size: 0.9rem;
+}
+
+audio {
+  margin-top: 10px;
+}
+
+.waveform-container {
+  background-color: #fff5f5;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+button {
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #f5b7b1;
+}
+
+.d-flex span {
+  color: #ffffff;
+  font-weight: bold;
+}
+.custom-audio {
+  width: 100%; /* Full width inside the table */
+  height: 40px;
+  border-radius: 10px; /* Rounded corners */
+  background-color: #fff5f5; /* Soft background */
+  /* border: 1px solid #03afff; Light border */
+  outline: none;
+  padding: 5px; /* Some padding around the audio controls */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.custom-audio::-webkit-media-controls-panel {
+  background-color: #fff5f5; /* Match background color */
+  border-radius: 10px; /* Rounded corners for the controls */
+}
+
+.custom-audio::-webkit-media-controls-play-button {
+  filter: invert(50%) sepia(50%) saturate(300%) hue-rotate(-10deg);
+  background-color: transparent;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.custom-audio::-webkit-media-controls-current-time,
+.custom-audio::-webkit-media-controls-time-remaining {
+  color: #0cf0d1;
+  font-weight: bold;
+}
+
+/* Hide any unwanted default border when clicked */
+.custom-audio:focus {
+  outline: none;
+  border: 1px solid #0155f1; /* Red border on focus */
+}
+
+
